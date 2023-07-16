@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Totoong Estado</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is a website for Home seekers" />
+    <meta
+      name="keywords"
+      content="real estate, building, house, home, house and lot, dwelling, land, lot, farmland, commercial building, residential area, real estate website, buy and sell, apartment, condo unit, condominium, rent to own, rent"
+    />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+      <div class="hero-container">
+        <div data-aos="fade-in">
+          <div class="hero-logo">
+            <img src="/img/logo-3-no-background.png" alt="Logo" />
+          </div>
+
+          <h1 class="display-2 pb-2">Welcome Home</h1>
+          <h2>
+            We offer
+            <span
+              id="typing-text"
+              class="typed fs-3"
+              data-typed-items="beautiful graphics, functional websites, working mobile apps"
+            ></span>
+          </h2>
+          <div class="actions">
+            <a href="#slider" class="btn-get-started rounded-pill"
+              >View Gallery</a
+            >
+            <a href="#services" class="btn-services rounded-pill"
+              >Our Services</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <header id="header" class="sticky-top">
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-dark align-items-center"
+      >
+        <div class="container-md">
+          <a class="navbar-brand" href="index.html"
+            ><img src="/img/logo-3-no-background.png" alt="topagentph logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#main-menu"
+            aria-controls="main-menu"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="main-menu"
+            aria-labelledby="main-menu-label"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title active" id="main-menu-label">
+                Navigate
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body bg-transparent">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active current"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Properties
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li>
+                      <a class="dropdown-item" href="/property-condo.html"
+                        >Condominium</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/property-house.html"
+                        >House and Lot</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/property-comspace.html"
+                        >Commercial Space</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/property-lots.html"
+                        >Land</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#spacer">Contact</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button
+                  id="btn-nav-search"
+                  class="btn btn-success-primary"
+                  type="submit"
+                >
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      
+      <!-- section about -->
+      <section id="about">
+        <div class="container  pt-4" data-aos="fade-up">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="section-title">About Us</h3>
+              <div class="section-title-divider"></div>
+              <p class="section-description">
+                TopAgentPH is a premier real estate brokerage firm that has been
+                providing exceptional service to clients throughout the
+                Philippines for over a decade.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="container about-container"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="row">
+            <div class="col-lg-6 about-img">
+              <img src="/img/about-img.jpg" alt="" />
+            </div>
+
+            <div class="col-md-6 about-content">
+              <h2 class="about-title">We provide great services and ideas</h2>
+              <p class="about-text">
+                TopAgentPH is a real estate company based in the Philippines
+                that specializes in providing exceptional service to clients in
+                buying, selling, and renting properties. The company has a team
+                of top-performing real estate agents who are knowledgeable about
+                the local market and are committed to helping clients achieve
+                their real estate goals.
+              </p>
+              <p class="about-text">
+                TopAgentPH offers a wide range of real estate services,
+                including property listing, property management, real estate
+                consultancy, and investment advisory. They cater to both local
+                and international clients and have a strong online presence to
+                help clients easily access their services.
+              </p>
+              <p class="about-text">
+                The company prides itself on its professionalism, integrity, and
+                commitment to delivering exceptional service. They prioritize
+                the needs and interests of their clients and work tirelessly to
+                ensure their satisfaction. TopAgentPH is known for its
+                transparency, honesty, and expertise in the real estate
+                industry, making it a top choice for clients looking to buy,
+                sell or rent properties in the Philippines.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
+      
+      <!-- Subscrbe Section -->
+      <section id="subscribe">
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+            <div class="col-md-8">
+              <h3 class="subscribe-title">Subscribe For Updates</h3>
+              <p class="subscribe-text">
+                Join our 1000+ subscribers and get access to the latest tools,
+                freebies, product announcements and much more!
+              </p>
+            </div>
+
+            <div class="col-md-4 subscribe-btn-container">
+              <a class="subscribe-btn" href="#spacer">Subscribe Now</a>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Subscrbe Section -->
+
+      <!-- Faq -->
+      <section id="questions" class="px-5 pb-5">
+        <div class="container">
+          <div class="row my-5 text-center">
+            <h3 class="section-title">Frequently Asked Questions</h3>
+          </div>
+        </div>
+      <article>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Where exactly are you located?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <p>18th floor, The W Fifth Avenue, 5th Ave, Taguig, 1630</p>
+                <a href="#spacer">Link here</a>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              How do I buy realty?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <p>
+                  To buy realty, you should work with a licensed real estate agent who can help you find properties that meet your needs and budget. Once you've found a property you're interested in, you'll typically make an offer through your agent, and negotiate a price with the seller. You'll then need to secure financing, complete inspections, and close the sale.
+                </p>
+                <a href="#spacer">Talk with our most sought agents</a>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                What is a real estate agent?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <p>
+                  A real estate agent is a licensed professional who helps
+                  buyers and sellers with the process of buying or selling
+                  realty. They typically work for a brokerage firm, and are
+                  responsible for helping clients find properties, negotiate
+                  prices, complete paperwork, and close deals.
+                </p>
+                <a href="#spacer">Talk with our most sought agents</a>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingfour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapsefour"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                What is a real estate broker?
+              </button>
+            </h2>
+            <div
+              id="flush-collapsefour"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingfour"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <p>
+                  A real estate broker is a licensed professional who has
+                  completed additional training and education beyond that
+                  required for a real estate agent. Brokers are typically
+                  responsible for managing brokerage firms, overseeing agents,
+                  and ensuring compliance with state and federal real estate
+                  laws.
+                </p>
+                <p>Here are some of the information you want to read</p>
+                <a href="about.html">Visit here</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive"
+                aria-expanded="false"
+                aria-controls="flush-collapseFive"
+              >
+                What is the difference between realty and real property?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingFive"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <p>
+                  Realty and real property are two terms used interchangeably to
+                  refer to land and any permanent improvements made to it.
+                  However, realty is more commonly used to refer to the physical
+                  aspects of real estate, while real property encompasses both
+                  physical and legal aspects, including ownership rights and
+                  legal interests.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </article>
+      </section>
+      <!-- contact -->
+      <div id="spacer"></div>
+      <section id="contact-title" class="intro-single mt-5 pt-5 pb-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-lg-8">
+              <div class="title-single-box">
+                <h1 class="title-single text-dark">Contact Us</h1>
+                <span class="color-text-a text-dark"> </span>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-4">
+              <nav
+                aria-label="breadcrumb"
+                class="breadcrumb-box d-flex justify-content-lg-end"
+              ></nav>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container pb-4">
+          <div class="col-sm-12 section-t8">
+            <div class="row">
+              <div class="col-md-7">
+                <form
+                  action="forms/contact.php"
+                  method="post"
+                  role="form"
+                  class="php-email-form"
+                >
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          name="name"
+                          class="form-control form-control-lg form-control-a"
+                          placeholder="Your Name"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <div class="form-group">
+                        <input
+                          name="email"
+                          type="email"
+                          class="form-control form-control-lg form-control-a"
+                          placeholder="Your Email"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          name="subject"
+                          class="form-control form-control-lg form-control-a"
+                          placeholder="Subject"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          name="number"
+                          class="form-control form-control-lg form-control-a"
+                          placeholder="Mobile Number"
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <select
+                        class="form-select form-select-lg col-md-12 mb-3 text-secondary"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Concern About</option>
+                        <option value="1">Condominium</option>
+                        <option value="2">House and Lot</option>
+                        <option value="3">Commercial Space</option>
+                        <option value="3">Land</option>
+                      </select>
+                    </div>
+
+                    <div class="col-md-12 mb-3">
+                      <div class="form-group">
+                        <textarea
+                          name="message"
+                          class="form-control"
+                          name="message"
+                          cols="45"
+                          rows="8"
+                          placeholder="Message"
+                          required
+                        ></textarea>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12 text-center">
+                      <button
+                        type="submit"
+                        class="btn btn-success-primary mb-3"
+                      >
+                        Send Message
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-5 section-md-t3">
+                <div class="icon-box section-b2">
+                  <div class="icon-box-icon">
+                    <span class="bi bi-envelope"></span>
+                  </div>
+                  <div class="icon-box-content table-cell">
+                    <div class="icon-box-title">
+                      <h4 class="icon-title">Say Hello</h4>
+                    </div>
+                    <div class="icon-box-content">
+                      <p class="mb-1">
+                        Email.
+                        <span class="color-a">topagent@gegemail.ph</span>
+                      </p>
+                      <p class="mb-1">
+                        Phone.
+                        <span class="color-a">+54 356 945234</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="icon-box section-b2">
+                  <div class="icon-box-icon">
+                    <span class="bi bi-geo-alt"></span>
+                  </div>
+                  <div class="icon-box-content table-cell">
+                    <div class="icon-box-title">
+                      <h4 class="icon-title">Find us in</h4>
+                    </div>
+                    <div class="icon-box-content">
+                      <p class="mb-1">
+                        18th floor, The W Fifth Avenue, 5th Ave, Taguig, 1630
+                        <br />
+                        Metro Manila
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="icon-box section-b2">
+                  <div class="icon-box-icon">
+                    <span class="bi bi-geo-alt"></span>
+                  </div>
+                  <div class="icon-box-content table-cell">
+                    <div class="icon-box-title">
+                      <h4 class="icon-title">Locate Us here</h4>
+                    </div>
+                    <div class="icon-box-content pt-2">
+                      <div id="map-container-google-1" class="z-depth-1-half map-container col-md-6" style="height: 400px">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1365.3530261585183!2d121.04797043736814!3d14.553339095551236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c8f136cec06b%3A0xb66cdf7abea0bd3!2sThe%20W%20Fifth%20Avenue%2C%205th%20Ave%2C%20Taguig%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1682377361012!5m2!1sen!2sph" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div>
+        <button
+          id="back-to-top"
+          type="button"
+          class="btn btn-success-primary border-white btn-floating rounded-circle"
+        >
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <section class="footer-section bg-dark">
+      <div class="container pt-4">
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <div class="foot-item">
+              <div class="foot--item-header">
+                <h3 class="w-title-a text-brand h1">topagent.ph</h3>
+              </div>
+              <div class="w-body-a">
+                <p class="w-text-a color-text-a">
+                  TopAgentPH is a real estate company based in the Philippines
+                  that specializes in providing exceptional service to clients
+                  in buying, selling, and renting properties.
+                </p>
+              </div>
+              <div class="w-footer-a">
+                <ul class="list-unstyled">
+                  <li class="color-a text-white">
+                    <span class="color-text-a fw-bold">Phone .</span> +54 356
+                    945234
+                  </li>
+                  <li class="color-a text-white">
+                    <span class="color-text-a fw-bold">Email .</span>
+                    topagent@mini1.ph
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 section-md-t3">
+            <div class="foot-item">
+              <div class="foot-item-header">
+                <h3 class="w-title-a text-brand h1">The Company</h3>
+              </div>
+              <div class="w-body-a">
+                <div class="w-body-a">
+                  <ul class="list-unstyled">
+                    <li class="item-list-a">
+                      <i class="fas fa-chevron-right"></i>
+                      <a href="#">Site Map</a>
+                    </li>
+                    <li class="item-list-a">
+                      <i class="fas fa-chevron-right"></i>
+                      <a href="#"> Legal</a>
+                    </li>
+                    <li class="item-list-a">
+                      <i class="fas fa-chevron-right"></i>
+                      <a href="#">Agent Admin</a>
+                    </li>
+                    <li class="item-list-a">
+                      <i class="fas fa-chevron-right"></i>
+                      <a href="#">Careers</a>
+                    </li>
+                    <li class="item-list-a">
+                      <i class="fas fa-chevron-right"></i>
+                      <a href="#">Affiliate</a>
+                    </li>
+                    <li class="item-list-a">
+                      <i class="fas fa-chevron-right"></i>
+                      <a href="#">Privacy Policy</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 section-md-t3">
+            <div class="foot-item">
+              <div class="foot-item-header">
+                <h3 class="w-title-a text-brand h1">Property sites</h3>
+              </div>
+              <div class="">
+                <ul class="list-unstyled">
+                  <li class="item-list-a">
+                    <i class="fas fa-chevron-right"></i>
+                    <a href="#">Baguio City</a>
+                  </li>
+                  <li class="item-list-a">
+                    <i class="fas fa-chevron-right"></i>
+                    <a href="#">Boracay Island</a>
+                  </li>
+                  <li class="item-list-a">
+                    <i class="fas fa-chevron-right"></i>
+                    <a href="#">Cebu City</a>
+                  </li>
+                  <li class="item-list-a">
+                    <i class="fas fa-chevron-right"></i>
+                    <a href="#">Davao City</a>
+                  </li>
+                  <li class="item-list-a">
+                    <i class="fas fa-chevron-right"></i>
+                    <a href="#">Tagaytay</a>
+                  </li>
+                  <li class="item-list-a">
+                    <i class="fas fa-chevron-right"></i>
+                    <a href="#">Metro Manila</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer" class="bg-dark">
+      <div class="container justify-content-center text-center">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="socials">
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook fa-2x" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <hr class="container text-light" />
+            <div class="copyright-footer p-3">
+              <p class="copyright color-text-a">
+                &copy; Copyright
+                <span class="color-a">topagent.ph</span> All Rights Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End  Footer -->
+
+    <!-- Bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+
+  </body>
+</html>

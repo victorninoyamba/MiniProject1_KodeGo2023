@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>TopAgent.ph | House&Lot</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <main>
+        <!-- NavBar -->
+      <nav>
+        <div id="mainMenu" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li><a class="nav-link" href="#slider">Home</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li class="dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href=""
+                role="button"
+                data-bs-toggle="dropdown"
+                >Properties</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Condominium</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">House & Lot</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Lots</a>
+                </li>
+              </ul>
+            </li>
+            <li><a class="nav-link" href="./events.html">Events</a></li>
+            <li>
+              <a class="nav-link" href="./contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <header id="header" class="sticky-top">
+        <nav
+          class="navbar navbar-expand-md navbar-dark bg-success-primary align-items-center"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"
+              ><img
+                src="./img pre final/logo-3-no-background.png"
+                alt="topagentph logo"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#main-menu"
+              aria-controls="main-menu"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end text-bg-dark"
+              tabindex="-1"
+              id="main-menu"
+              aria-labelledby="main-menu-label"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title active" id="main-menu-label">
+                  Navigate
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body bg-transparent">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      aria-current="page"
+                      href="index-semi-final.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index-semi-final.html#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index-semi-final.html#services">Services</a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Properties
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li>
+                        <a class="dropdown-item" href="property-condo.html">Condominium</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="property-house.html">House and Lot</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="property-comspace.html">Commercial Space</a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li><a class="dropdown-item" href="property-lots.html">Land</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#spacer">Contact</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button
+                    id="btn-nav-search"
+                    class="btn btn-success-primary"
+                    type="submit"
+                  >
+                    Search
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+
+        <!-- <section class="intro-single">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-lg-8">
+                <div class="title-single-box">
+                  <h1 class="title-single text-dark">Freya Model House</h1>
+                  <span class="text-dark mb-3">Baguio City</span>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </section> -->
+        <section class="property-single nav-arrow-b">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div id="property-single-carousel" class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="carousel-item-b swiper-slide">
+                      <img src="./img pre final/property-1.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="property-single-carousel-pagination carousel-pagination"
+                ></div>
+              </div>
+            </div>
+  
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="row justify-content-between">
+                  <div class="col-md-5 col-lg-4">
+                    <div class="property-price d-flex justify-content-center foo">
+                      <div class="card-header-c d-flex">
+                        <div class="card-box-ico">
+                        </div>
+                        <div class="card-title-c align-self-center">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="property-summary">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="title-box-d section-t4">
+                            <h3 class="title-d">Quick Summary</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="summary-list">
+                        <ul class="list">
+                          <li class="d-flex justify-content-between">
+                            <strong>Property ID:</strong>
+                            <span>2727</span>
+                          </li>
+                          <li class="d-flex justify-content-between">
+                            <strong>Location:</strong>
+                            <span>Baguio, City</span>
+                          </li>
+                          <li class="d-flex justify-content-between">
+                            <strong>Property Type:</strong>
+                            <span>House</span>
+                          </li>
+                          <li class="d-flex justify-content-between">
+                            <strong>Status:</strong>
+                            <span>Sale</span>
+                          </li>
+                          <li class="d-flex justify-content-between">
+                            <strong>Area:</strong>
+                            <span
+                              >150m
+                              <sup>2</sup>
+                            </span>
+                          </li>
+                          <li class="d-flex justify-content-between">
+                            <strong>Beds:</strong>
+                            <span>4</span>
+                          </li>
+                          <li class="d-flex justify-content-between">
+                            <strong>Baths:</strong>
+                            <span>2</span>
+                          </li>
+                          <li class="d-flex justify-content-between">
+                            <strong>Garage:</strong>
+                            <span>1</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-7 col-lg-7 section-md-t3">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="title-box-d">
+                          <h3 class="title-d">Freyya Model House</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="property-description">
+                      <p class="description color-text-a">
+                        This small house is a cozy and charming abode that exudes warmth and comfort. It is a single-story structure that is constructed with wooden panels and has a sloping roof. The house has a compact floor plan that maximizes the use of space. Upon entering, you are greeted by a small foyer that leads to a combined living room and kitchen. The living room has a large window that lets in plenty of natural light, making the space feel bright and airy. 
+                      </p>
+                      <p class="description color-text-a no-margin">
+                        The kitchen is equipped with modern appliances and has ample counter space for preparing meals. The house also has a bedroom and a bathroom that are both functional and stylish. The bedroom has a comfortable bed and a closet for storing clothes, while the bathroom has a shower, sink, and toilet. The interior of the house is tastefully decorated with neutral colors and cozy furnishings, creating a warm and inviting atmosphere. Outside, there is a small porch that is perfect for enjoying the fresh air and taking in the scenery. This small house is a perfect retreat for those seeking a simple and peaceful lifestyle.
+                      </p>
+                    </div>
+                    <div class="row section-t3">
+                      <div class="col-sm-12">
+                        <div class="title-box-d">
+                          <h3 class="title-d">Amenities</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="amenities-list color-text-a">
+                      <ul class="list-a no-margin">
+                        <li>Balcony</li>
+                        <li>Outdoor Kitchen</li>
+                        <li>Cable Tv</li>
+                        <li>Deck</li>
+                        <li>Tennis Courts</li>
+                        <li>Internet</li>
+                        <li>Parking</li>
+                        <li>Sun Room</li>
+                        <li>Concrete Flooring</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                  <!-- <div
+                    class="tab-pane fade show active"
+                    id="pills-video"
+                    role="tabpanel"
+                    aria-labelledby="pills-video-tab"
+                  >
+                    <iframe
+                      src="https://player.vimeo.com/video/73221098"
+                      width="100%"
+                      height="460"
+                      frameborder="0"
+                      webkitallowfullscreen
+                      mozallowfullscreen
+                      allowfullscreen
+                    ></iframe>
+                  </div> -->
+                  <!-- <div
+                    class="tab-pane fade"
+                    id="pills-plans"
+                    role="tabpanel"
+                    aria-labelledby="pills-plans-tab"
+                  >
+                    <img src="assets/img/plan2.jpg" alt="" class="img-fluid" />
+                  </div> -->
+                  <div
+                    class="tab-pane fade"
+                    id="pills-map"
+                    role="tabpanel"
+                    aria-labelledby="pills-map-tab"
+                  >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="row section-t3">
+                  <div class="col-sm-12">
+                    <!-- <div class="title-box-d">
+                      <h3 class="title-d">Contact Agent</h3>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 col-lg-4">
+                    <img src="assets/img/agent-4.jpg" alt="" class="img-fluid" />
+                  </div>
+                  <!-- <div class="col-md-6 col-lg-4">
+                    <div class="property-agent">
+                      <h4 class="title-agent">Anabella Geller</h4>
+                      <p class="color-text-a">
+                        Nulla porttitor accumsan tincidunt. Vestibulum ac diam sit
+                        amet quam vehicula elementum sed sit amet dui. Quisque
+                        velit nisi, pretium ut lacinia in, elementum id enim.
+                      </p>
+                      <ul class="list-unstyled">
+                        <li class="d-flex justify-content-between">
+                          <strong>Phone:</strong>
+                          <span class="color-text-a">(222) 4568932</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          <strong>Mobile:</strong>
+                          <span class="color-text-a">777 287 378 737</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          <strong>Email:</strong>
+                          <span class="color-text-a">annabella@example.com</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                          <strong>Skype:</strong>
+                          <span class="color-text-a">Annabela.ge</span>
+                        </li>
+                      </ul>
+                      <div class="socials-a">
+                        <ul class="list-inline">
+                          <li class="list-inline-item">
+                            <a href="#">
+                              <i class="bi bi-facebook" aria-hidden="true"></i>
+                            </a>
+                          </li>
+                          <li class="list-inline-item">
+                            <a href="#">
+                              <i class="bi bi-twitter" aria-hidden="true"></i>
+                            </a>
+                          </li>
+                          <li class="list-inline-item">
+                            <a href="#">
+                              <i class="bi bi-instagram" aria-hidden="true"></i>
+                            </a>
+                          </li>
+                          <li class="list-inline-item">
+                            <a href="#">
+                              <i class="bi bi-linkedin" aria-hidden="true"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div> -->
+                  <!-- <div class="col-md-12 col-lg-4">
+                    <div class="property-contact">
+                      <form class="form-a">
+                        <div class="row">
+                          <div class="col-md-12 mb-1">
+                            <div class="form-group">
+                              <input
+                                type="text"
+                                class="form-control form-control-lg form-control-a"
+                                id="inputName"
+                                placeholder="Name *"
+                                required
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-1">
+                            <div class="form-group">
+                              <input
+                                type="email"
+                                class="form-control form-control-lg form-control-a"
+                                id="inputEmail1"
+                                placeholder="Email *"
+                                required
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-1">
+                            <div class="form-group">
+                              <textarea
+                                id="textMessage"
+                                class="form-control"
+                                placeholder="Comment *"
+                                name="message"
+                                cols="45"
+                                rows="8"
+                                required
+                              ></textarea>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mt-3">
+                            <button type="submit" class="btn btn-a">
+                              Send Message
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+      
+      
+    </main>
+       <section class="footer-section bg-secondary">
+      <div class="container pt-4">
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <div class="foot-item">
+              <div class="foot--item-header text-white">
+                <h3 class="w-title-a text-brand h1">topagent.ph</h3>
+              </div>
+              <div class="w-body-a">
+                <p class="w-text-a color-text-a text-white">
+                  TopAgentPH is a real estate company based in the Philippines
+                  that specializes in providing exceptional service to clients
+                  in buying, selling, and renting properties. The company has a
+                  team of top-performing real estate agents who are
+                  knowledgeable about the local market and are committed to
+                  helping clients achieve their real estate goals.
+                </p>
+              </div>
+              <div class="w-footer-a">
+                <ul class="list-unstyled">
+                  <li class="color-a text-white">
+                    <span class="color-text-a fw-bold">Phone .</span> +54 356
+                    945234
+                  </li>
+                  <li class="color-a text-white">
+                    <span class="color-text-a fw-bold">Email .</span>
+                    topagent@mini1.ph
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 section-md-t3">
+            <div class="foot-item">
+              <div class="foot-item-header">
+                <h3 class="w-title-a text-brand h1 text-white">The Company</h3>
+              </div>
+              <div class="w-body-a text-white">
+                <div class="w-body-a">
+                  <ul class="list-unstyled">
+                    <li class="item-list-a">
+                      <i class="fas fa-chevron-right"></i>
+                      <a href="#"><span class="text-white">Site Map</span></a>
+                    </li>
+                    <li class="item-list-a">
+                      <i class="fas fa-chevron-right"></i
+                      ><a href="#"><span class="text-white">Legal</span></a>
+                    </li>
+                    <li class="item-list-a">
+                      <i class="fas fa-chevron-right"></i>
+                      <a href="#"
+                        ><span class="text-white">Agent Admin</span></a
+                      >
+                    </li>
+                    <li class="item-list-a">
+                      <i class="fas fa-chevron-right"></i>
+                      <a href="#"><span class="text-white">Careers</span></a>
+                    </li>
+                    <li class="item-list-a">
+                      <i class="fas fa-chevron-right"></i>
+                      <a href="#"><span class="text-white">Affiliate</span></a>
+                    </li>
+                    <li class="item-list-a">
+                      <i class="fas fa-chevron-right"></i>
+                      <a href="#"
+                        ><span class="text-white">Privacy Policy</span></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 section-md-t3">
+            <div class="foot-item">
+              <div class="foot-item-header">
+                <h3 class="w-title-a text-brand h1 text-white">
+                  Property sites
+                </h3>
+              </div>
+              <div class="">
+                <ul class="list-unstyled">
+                  <li class="item-list-a">
+                    <i class="fas fa-chevron-right"></i>
+                    <a href="#"><span class="text-white">Baguio City</span></a>
+                  </li>
+                  <li class="item-list-a">
+                    <i class="fas fa-chevron-right"></i>
+                    <a href="#"
+                      ><span class="text-white">Boracay Island</span></a
+                    >
+                  </li>
+                  <li class="item-list-a">
+                    <i class="fas fa-chevron-right"></i>
+                    <a href="#"><span class="text-white">Cebu City</span></a>
+                  </li>
+                  <li class="item-list-a">
+                    <i class="fas fa-chevron-right"></i>
+                    <a href="#"><span class="text-white">Davao City</span></a>
+                  </li>
+                  <li class="item-list-a">
+                    <i class="fas fa-chevron-right"></i>
+                    <a href="#"><span class="text-white">Tagaytay</span></a>
+                  </li>
+                  <li class="item-list-a">
+                    <i class="fas fa-chevron-right"></i>
+                    <a href="#"><span class="text-white">Metro Manila</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div
+        class="container justify-content-center text-center bg-secondary mw-100"
+      >
+        <div class="row">
+          <div class="col-md-12">
+            <nav class="nav-footer">
+                  <li class="list-inline-item">
+                    <a href="#">Home</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">About</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">Services</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">Property</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">Blog</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">Contact</a>
+                  </li>
+                </ul>
+            </nav>
+            <div class="socials">
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="http://facebook.com" target="_blank">
+                    <i class="fab fa-facebook fa-2x" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="http://twitter.com" target="_blank">
+                    <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="http://instagram.com" target="_blank">
+                    <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="http://linkedin.com" target="_blank">
+                    <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <hr class="container" />
+            <div class="copyright-footer">
+              <p class="copyright color-text-a">
+                &copy; Copyright
+                <span class="color-a">topagent.ph</span> All Rights Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+lot
